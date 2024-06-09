@@ -56,7 +56,10 @@ In our email regex, `+` is used to ensure that there is at least one character i
 
 ### OR Operator
 
+The OR operator (`|`) is used to match one pattern or another.
+Example: `cat|dog` matches either `cat` or `dog`.
 
+In other contexts, the OR operator can be used to specify alternate acceptable patterns.
 
 ### Character Classes
 
