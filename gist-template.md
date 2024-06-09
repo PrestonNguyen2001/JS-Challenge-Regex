@@ -43,6 +43,17 @@ In our email regex, the anchors ensure that the entire string must be a valid em
 
 ### Quantifiers
 
+Quantifiers define the number of times a character or group of characters can occur.
+
+- `*` matches 0 or more occurrences.
+- `+` matches 1 or more occurrences.
+- `?` matches 0 or 1 occurrence.
+- `{n}` matches exactly n occurrences.
+- `{n,}` matches n or more occurrences.
+- `{n,m}` matches between n and m occurrences.
+
+In our email regex, `+` is used to ensure that there is at least one character in the username and domain name parts.
+
 ### OR Operator
 
 
