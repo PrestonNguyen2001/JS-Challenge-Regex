@@ -84,7 +84,12 @@ Although flags are not used in our specific email regex, they can be very useful
 
 ### Grouping and Capturing
 
+Parentheses are used for grouping and capturing.
 
+- `(abc)` matches and captures the string "abc".
+- `(?:abc)` matches but does not capture the string "abc".
+
+In our email regex, parentheses are used to capture the username, domain name, and top-level domain separately.
 
 ### Bracket Expressions
 
