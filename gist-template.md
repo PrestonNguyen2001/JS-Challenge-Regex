@@ -111,6 +111,12 @@ In email validation, greedy and lazy matches are less commonly used, but underst
 
 ### Boundaries
 
+Boundaries assert positions in the string.
+
+- `\b` matches a word boundary.
+- `\B` matches a position that is not a word boundary.
+
+In our email regex, boundaries are not explicitly used, but they can be essential in other contexts to ensure matches occur at specific word boundaries.
 
 ### Back-references
 
