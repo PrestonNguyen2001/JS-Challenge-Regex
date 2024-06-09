@@ -102,7 +102,12 @@ Bracket expressions are a shorthand for character classes. In our regex, they de
 
 ### Greedy and Lazy Match
 
+Quantifiers are greedy by default, meaning they match as much as possible. Appending a `?` makes them lazy, meaning they match as little as possible.
 
+- `.*` is greedy and matches as much as possible.
+- `.*?` is lazy and matches as little as possible.
+
+In email validation, greedy and lazy matches are less commonly used, but understanding them is crucial for more complex patterns.
 
 ### Boundaries
 
