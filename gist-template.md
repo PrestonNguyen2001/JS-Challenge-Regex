@@ -23,6 +23,7 @@ In this tutorial, we will explain the regex pattern used to validate email addre
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Example Regex: Email Validation](#example-regex:-email-validation)
 
 ## Regex Components
 
@@ -30,7 +31,7 @@ In this tutorial, we will explain the regex pattern used to validate email addre
 
 Regular Expressions (regex) are sequences of characters that define a search pattern. They are used to match, locate, or manage text, making it possible to find or replace words within texts. Additionally, regex can be utilized to verify if a text adheres to specified rules.
 
-For example, let's say you have a list of filenames, and you only want to find files with the `.pdf` extension. By using the expression `^\w+\.pdf$`, you can achieve this. The meanings of the components in this expression will become clearer as we go through the steps.
+For example, let's say you have a list of email addresses, and you want to ensure that each one follows a valid format. By using the expression `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`, you can identify properly formatted email addresses. The meanings of the components in this expression will become clearer as we break down the individual elements.
 
 ### Anchors
 
@@ -136,5 +137,17 @@ Look-ahead and look-behind are used to assert that a match is followed or preced
 - `(?<!abc)` is a negative look-behind, matches a position not preceded by `abc`.
 
 These constructs are not used in our email regex but are crucial for more advanced patterns requiring context-aware matching.
+
+### Example Regex: Email Validation
+
+Let's break down the regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` used for email validation:
+
+- `^`: Asserts the position at the start of the line.
+- `([a-z0-9_\.-]+)`: Matches the username part of the email. This can include lowercase letters, digits, underscores, dots, and hyphens. The `+` means it matches one or more of these characters.
+- `@`: Matches the literal "@" symbol.
+- `([\da-z\.-]+)`: Matches the domain name part of the email. This can include digits, lowercase letters, dots, and hyphens. The `+` means it matches one or more of these characters.
+- `\.`: Matches the literal dot symbol.
+- `([a-z\.]{2,6})`: Matches the top-level domain (TLD) part of the email. This can include lowercase letters and dots. The `{2,6}` means it matches between `2` and `6` of these characters.
+- `$`: Asserts the position at the end of the line.
 
 ## Author
