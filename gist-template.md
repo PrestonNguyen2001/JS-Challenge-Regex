@@ -74,6 +74,13 @@ In our email regex, `[a-z0-9_\.-]` matches any lowercase letter, digit, undersco
 
 ### Flags
 
+Flags modify the behavior of the regex.
+
+- `i` makes the regex case-insensitive.
+- `g` makes the regex global, meaning it will find all matches rather than stopping after the first match.
+- `m` makes the regex multiline, allowing `^` and `$` to match the start and end of each line.
+
+Although flags are not used in our specific email regex, they can be very useful for other regex patterns.
 
 ### Grouping and Capturing
 
