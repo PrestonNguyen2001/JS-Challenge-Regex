@@ -63,7 +63,14 @@ In other contexts, the OR operator can be used to specify alternate acceptable p
 
 ### Character Classes
 
+Character classes allow you to match any one of a set of characters.
 
+- `[abc]` matches any one of the characters `a`, `b`, or `c`.
+- `[^abc]` matches any character except `a`, `b`, or `c`.
+- `[a-z]` matches any lowercase letter.
+- `[0-9]` matches any digit.
+
+In our email regex, `[a-z0-9_\.-]` matches any lowercase letter, digit, underscore, period, or hyphen in the username, while `[\da-z\.-]` matches any digit, lowercase letter, period, or hyphen in the domain.
 
 ### Flags
 
