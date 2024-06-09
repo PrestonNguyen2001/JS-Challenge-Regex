@@ -128,5 +128,13 @@ While our email regex does not use back-references, they are powerful for ensuri
 
 ### Look-ahead and Look-behind
 
+Look-ahead and look-behind are used to assert that a match is followed or preceded by another match without including it in the result.
+
+- `(?=abc)` is a positive look-ahead, matches a position followed by `abc`.
+- `(?!abc)` is a negative look-ahead, matches a position not followed by `abc`.
+- `(?<=abc)` is a positive look-behind, matches a position preceded by `abc`.
+- `(?<!abc)` is a negative look-behind, matches a position not preceded by `abc`.
+
+These constructs are not used in our email regex but are crucial for more advanced patterns requiring context-aware matching.
 
 ## Author
