@@ -34,6 +34,12 @@ For example, let's say you have a list of filenames, and you only want to find f
 
 ### Anchors
 
+Anchors are used to specify the position in the string where the regex should match.
+
+- `^` asserts the position at the start of the string.
+- `$` asserts the position at the end of the string.
+
+In our email regex, the anchors ensure that the entire string must be a valid email address, from start to finish.
 
 ### Quantifiers
 
