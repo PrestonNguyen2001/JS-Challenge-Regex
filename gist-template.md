@@ -120,8 +120,11 @@ In our email regex, boundaries are not explicitly used, but they can be essentia
 
 ### Back-references
 
+Back-references match the same text as previously matched by a capturing group.
 
+- `(\d)\1` matches two identical digits.
 
+While our email regex does not use back-references, they are powerful for ensuring repeated patterns match exactly.
 
 ### Look-ahead and Look-behind
 
