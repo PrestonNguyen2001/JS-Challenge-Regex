@@ -151,3 +151,5 @@ Let's break down the regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` u
 - `$`: Asserts the position at the end of the line.
 
 ## Author
+
+This tutorial was written by Preston Nguyen, a web development student passionate about teaching and helping others understand the fundamentals of programming. For more tutorials and insights, visit my [GitHub profile](https://github.com/PrestonNguyen2001).
