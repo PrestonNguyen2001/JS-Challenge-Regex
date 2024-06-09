@@ -93,6 +93,12 @@ In our email regex, parentheses are used to capture the username, domain name, a
 
 ### Bracket Expressions
 
+Bracket expressions match any one of the enclosed characters.
+
+- `[abc]` matches any one of the characters a, b, or c.
+- `[^abc]` matches any character except a, b, or c.
+
+Bracket expressions are a shorthand for character classes. In our regex, they define the allowed characters in different parts of the email.
 
 ### Greedy and Lazy Match
 
